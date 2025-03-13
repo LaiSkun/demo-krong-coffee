@@ -33,6 +33,11 @@
     background-color: var(--nature-light);
 }
 
+.bg-nature-light-green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(242 252 226 / var(--tw-bg-opacity));
+}
+
 .text-coffee {
     color: var(--coffee);
 }

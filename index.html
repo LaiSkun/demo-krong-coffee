@@ -22,21 +22,22 @@
     <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-coffee-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <a href="/" class=" w-30 h-24 rounded-full overflow-hidden">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-coffee-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
                         <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z" />
                         <line x1="6" y1="2" x2="6" y2="4" />
                         <line x1="10" y1="2" x2="10" y2="4" />
                         <line x1="14" y1="2" x2="14" y2="4" />
-                    </svg>
-                    <span class="text-xl font-bold text-coffee-dark">Krong Coffee</span>
+                    </svg> -->
+                    <img src="/img/logo.png" class="w-full h-full object-contain scale-[3.0] transition-transform duration-300 hover:scale-[3.25]" loading="lazy" alt="Krong Coffee Logo">
                 </a>
-                
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="#about" class="text-coffee hover:text-coffee-dark transition-colors">Về chúng tôi</a>
+            
+                <nav class="hidden md:flex items-center gap-8 mr-30">
                     <a href="#products" class="text-coffee hover:text-coffee-dark transition-colors">Sản phẩm</a>
+                    <a href="#news" class="text-coffee hover:text-coffee-dark transition-colors">Tin tức</a>
                     <a href="#process" class="text-coffee hover:text-coffee-dark transition-colors">Quy trình</a>
+                    <a href="#about" class="text-coffee hover:text-coffee-dark transition-colors">Về chúng tôi</a>
                     <a href="#contact" class="text-coffee hover:text-coffee-dark transition-colors">Liên hệ</a>
                 </nav>
 
@@ -65,6 +66,7 @@
                 <nav class="flex flex-col gap-4">
                     <a href="#about" class="text-coffee hover:text-coffee-dark transition-colors">Về chúng tôi</a>
                     <a href="#products" class="text-coffee hover:text-coffee-dark transition-colors">Sản phẩm</a>
+                    <a href="#news" class="text-coffee hover:text-coffee-dark transition-colors">Tin tức</a>
                     <a href="#process" class="text-coffee hover:text-coffee-dark transition-colors">Quy trình</a>
                     <a href="#contact" class="text-coffee hover:text-coffee-dark transition-colors">Liên hệ</a>
                 </nav>
@@ -91,11 +93,119 @@
         </div>
     </section>
 
-   <!-- Products Section -->
-   <section id="products" class="py-12 md:py-20 bg-white/80 backdrop-blur-sm relative">
+       <!-- Menu Section -->
+   <section id="products" class="py-12 md:py-20 backdrop-blur-sm relative bg-nature-light-green">
     <div class="container mx-auto px-4 md:px-6">
         <div class="text-center mb-12">
-            <h3 class="text-coffee-accent font-medium mb-2">Đặc sản của chúng tôi</h3>
+            <h3 class="text-coffee-accent font-medium mb-2">Danh mục sản phẩm</h3>
+            <h2 class="text-3xl md:text-4xl font-bold text-coffee-dark">Khám phá sản phẩm</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img 
+                      src=https://images.unsplash.com/photo-1618160702438-9b02ab6515c9
+                      alt="cà phê hạt"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                    <div class="absolute bottom-0 p-6 text-white">
+                      <div class="mb-4 inline-block rounded-full bg-white/20 p-3 backdrop-blur-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-coffee-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z" />
+                            <line x1="6" y1="2" x2="6" y2="4" />
+                            <line x1="10" y1="2" x2="10" y2="4" />
+                            <line x1="14" y1="2" x2="14" y2="4" />
+                        </svg>
+                      </div>
+                      <h3 class="mb-2 text-xl font-bold">Cà phê hạt</h3>
+                      <p class="text-sm text-white/80">Các loại cà phê nguyên chất, đã rang xay</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="https://bizweb.dktcdn.net/100/438/521/files/t2-3.jpg?v=1635310503086"
+                        alt="cà phê pha sẵn"
+                        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                      <div class="absolute bottom-0 p-6 text-white">
+                        <div class="mb-4 inline-block rounded-full bg-white/20 p-3 backdrop-blur-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-coffee-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z" />
+                                <line x1="6" y1="2" x2="6" y2="4" />
+                                <line x1="10" y1="2" x2="10" y2="4" />
+                                <line x1="14" y1="2" x2="14" y2="4" />
+                            </svg>
+                          </div>
+                        <h3 class="mb-2 text-xl font-bold">Cà phê pha sẵn</h3>
+                        <p class="text-sm text-white/80">Các loại cà phê pha sẵn, tiện lợi</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="https://thanhlyhangcu.com/Images/Editor/images/download%20(1).jpg"
+                        alt="dụng cụ pha chế"
+                        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                      <div class="absolute bottom-0 p-6 text-white">
+                        <div class="mb-4 inline-block rounded-full bg-white/20 p-3 backdrop-blur-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/>
+                              </svg>
+                          </div>
+                        <h3 class="mb-2 text-xl font-bold">Dụng cụ pha chế</h3>
+                        <p class="text-sm text-white/80">Thiết bị và dụng cụ pha chế chuyên nghiệp</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+                    <div class="aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="https://product.hstatic.net/1000392281/product/poster_combo_hot-01_44df3f1a384340c791d462f377cfb24a_master.jpg" 
+                        alt="gói Combo"
+                        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                      <div class="absolute bottom-0 p-6 text-white">
+                        <div class="mb-4 inline-block rounded-full bg-white/20 p-3 backdrop-blur-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5l7.5 3.75V16.5L12 20l-7.5-3.75V8.25L12 4.5zM12 7l-7.5 3.75L12 14.5l7.5-3.75L12 7z"/>
+                              </svg>
+                          </div>
+                        <h3 class="mb-2 text-xl font-bold">Gói Combo</h3>
+                        <p class="text-sm text-white/80">Bộ sản phẩm kết hợp tiết kiệm</p>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+
+    </div>
+</section>
+
+   <!-- Products Section -->
+   <section class="py-12 md:py-20 bg-white/80 backdrop-blur-sm relative">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12">
+            <h3 class="inline-block px-3 py-1 bg-nature-light-green text-coffee-dark rounded-full text-sm font-medium mb-3">Đặc sản của chúng tôi</h3>
             <h2 class="text-3xl md:text-4xl font-bold text-coffee-dark">Các loại cà phê đặc biệt</h2>
         </div>
         
@@ -120,13 +230,13 @@
                 <button class="bg-coffee-accent text-white px-6 py-2 rounded-full hover:bg-coffee-dark transition-colors">Đặt hàng</button>
             </div>
             
-            <!-- Blend Coffee -->
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer relative z-10" onclick="openModal('blend')">
+            <!-- Culi Robusta Coffee -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer relative z-10" onclick="openModal('culi')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
-                    <img src="https://images.pexels.com/photos/21928790/pexels-photo-21928790/free-photo-of-coffee-beans-on-fabric.jpeg" alt="Blend Coffee" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7" alt="Culi Robusta Coffee" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
                 </div>
-                <h3 class="text-xl font-semibold text-coffee-dark mb-2">Cà phê Blend</h3>
-                <p class="text-coffee mb-4">Sự kết hợp hoàn hảo giữa Arabica và Robusta tạo nên hương vị độc đáo.</p>
+                <h3 class="text-xl font-semibold text-coffee-dark mb-2">Cà phê Culi Robusta</h3>
+                <p class="text-coffee mb-4">Hạt cà phê đặc biệt với hương vị đậm đặc và độ caffeine cao.</p>
                 <button class="bg-coffee-accent text-white px-6 py-2 rounded-full hover:bg-coffee-dark transition-colors">Đặt hàng</button>
             </div>
         </div>
@@ -169,11 +279,46 @@
         </svg>
     </a>
 </div>
+
+   <!-- Process Section -->
+   <section id="process" class="py-12 md:py-20 backdrop-blur-sm relative bg-nature-light-green">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-coffee-accent font-medium mb-2">Quy trình sản xuất</h3>
+            <h2 class="text-3xl md:text-4xl font-bold text-coffee-dark">Từ hạt đến tách cà phê</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="p-6 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg transition-all duration-300 hover:transform hover:scale-105">
+                  <div class="absolute -top-4 -left-4 w-12 h-12 bg-coffee-accent rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                   1
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2 mt-4 text-coffee-dark">Thu hoạch</h3>
+                  <p class="text-coffee leading-relaxed">Chọn lọc những hạt cà phê chín mọng, đảm bảo chất lượng tốt nhất.</p>
+                </div>
+                <div class="p-6 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg transition-all duration-300 hover:transform hover:scale-105">
+                    <div class="absolute -top-4 -left-4 w-12 h-12 bg-coffee-accent rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                     2
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 mt-4 text-coffee-dark">Rang xay</h3>
+                    <p class="text-coffee leading-relaxed">Rang với nhiệt độ và thời gian được kiểm soát chặt chẽ để giữ trọn hương vị.</p>
+                  </div>
+                  <div class="p-6 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg transition-all duration-300 hover:transform hover:scale-105">
+                    <div class="absolute -top-4 -left-4 w-12 h-12 bg-coffee-accent rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                      3
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 mt-4 text-coffee-dark">Đóng gói</h3>
+                    <p class="text-coffee leading-relaxed">Đóng gói kỹ lưỡng để bảo quản hương vị tươi ngon nhất.</p>
+                  </div>
+        </div>
+
+    </div>
+</section>
+
     <!-- About Section -->
     <section id="about" class="py-12 md:py-20 bg-white">
         <div class="container mx-auto px-4 md:px-6">
             <div class="text-center mb-12">
-                <h3 class="text-coffee-accent font-medium mb-2">Về chúng tôi</h3>
+                <h3 class="inline-block px-3 py-1 bg-nature-light-green text-coffee-dark rounded-full text-sm font-medium mb-3">Về chúng tôi</h3>
                 <h2 class="text-3xl md:text-4xl font-bold text-coffee-dark">Câu chuyện của Krong Coffee</h2>
             </div>
             
@@ -245,20 +390,20 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-coffee-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <span class="text-white/80">hello@krongcoffee.com</span>
+                            <span class="text-white/80">kimduwin@gmail.com</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-coffee-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                            <span class="text-white/80">(084) 123-456-789</span>
+                            <span class="text-white/80">0888 802 122</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="border-t border-white/10 mt-12 pt-6 text-center text-white/60">
-                <p>&copy; {{ date('Y') }} Krong Coffee. All rights reserved.</p>
+                <p>2025 Krong Coffee. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -268,7 +413,7 @@
                 name: 'Cà phê Arabica',
                 image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e',
                 description: 'Cà phê Arabica được biết đến với hương vị tinh tế và phức tạp. Với notes của trái cây tươi, chocolate và caramel, kết hợp với độ acid cân bằng, tạo nên một tách cà phê thơm ngon đặc biệt.',
-                features: ['Độ acid cân bằng', 'Hương vị trái cây', 'Notes chocolate', 'Vị ngọt tự nhiên'],
+                features: ['Độ acid cân bằng', 'Thơm', 'Chu nhẹ', 'Ít đắng và ít caffein hơn Robusta'],
                 price: 'Liên hệ để được báo giá'
             },
             robusta: {
@@ -278,11 +423,11 @@
                 features: ['Vị đậm đà', 'Caffein cao', 'Hương thơm nồng', 'Hậu vị kéo dài'],
                 price: 'Liên hệ để được báo giá'
             },
-            blend: {
-                name: 'Cà phê Blend',
-                image: 'https://images.pexels.com/photos/21928790/pexels-photo-21928790/free-photo-of-coffee-beans-on-fabric.jpeg',
-                description: 'Sự kết hợp hoàn hảo giữa Arabica và Robusta, tạo nên một hỗn hợp cà phê độc đáo với hương vị cân bằng. Vừa có độ đậm đà của Robusta, vừa có hương thơm tinh tế của Arabica.',
-                features: ['Hương vị cân bằng', 'Kết hợp độc đáo', 'Thích hợp pha phin', 'Dễ uống'],
+            culi: {
+                name: 'Cà phê Culi Robusta',
+                image: 'https://images.unsplash.com/photo-1559525839-b184a4d698c7',
+                description: '<strong>Culi</strong> (hay còn gọi là <strong>Peaberry</strong>) là loại hạt cà phê đột biến, thay vì có hai nửa hạt trong một quả cà phê như thông thường, thì <strong>chỉ có một hạt tròn duy nhất</strong>. Hạt này chứa nhiều tinh chất hơn, đậm đà hơn so với hạt Robusta bình thường. Culi Robusta có vị đắng mạnh, hậu vị kéo dài, hàm lượng caffeine rất cao, thích hợp với những ai thích cà phê đậm và mạnh.',
+                features: ['Hạt to tròn đều', 'Caffein cao nhất', 'Vị đắng đậm đà', 'Hương thơm nồng nàn',],
                 price: 'Liên hệ để được báo giá'
             }
         };

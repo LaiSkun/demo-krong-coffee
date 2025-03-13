@@ -63,12 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            document.querySelector(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
-            // Close mobile menu if open
-            if (!document.getElementById('mobileMenu').classList.contains('hidden')) {
-                toggleMobileMenu();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerOffset = 50;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                if (!document.getElementById('mobileMenu').classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
             }
         });
     });
